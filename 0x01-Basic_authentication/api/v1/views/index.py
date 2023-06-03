@@ -39,6 +39,6 @@ def unauthorized() -> None:
 def forbidden() -> None:
     """GET /api/v1/forbidden
     Return:
-      - Forbidden error.
+      - Forbidden error
     """
     abort(403)
