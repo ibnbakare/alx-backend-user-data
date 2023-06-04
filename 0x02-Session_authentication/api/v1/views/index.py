@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Index views.
+"""Module of Index views.
 """
 from flask import jsonify, abort
 from api.v1.views import app_views
@@ -9,7 +9,7 @@ from api.v1.views import app_views
 def status() -> str:
     """GET /api/v1/status
     Return:
-      - api status
+      - the status of the API.
     """
     return jsonify({"status": "OK"})
 
@@ -18,7 +18,7 @@ def status() -> str:
 def stats() -> str:
     """GET /api/v1/stats
     Return:
-      - each objects.
+      - the number of each objects.
     """
     from models.user import User
     stats = {}
